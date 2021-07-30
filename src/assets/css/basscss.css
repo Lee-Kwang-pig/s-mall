@@ -1,0 +1,32 @@
+@import './normalize.css';
+
+/* :root 获取根元素html */
+/* 定义一些css变量，方式：“--argumentName：value” */
+/* 使用自定义css变量的方式：var(--argumentName) */
+:root {
+    --color-text: #666;
+    --color-highlight-text: #F4606C;
+    --color-background: #fff;
+    --font-size: 16px;
+    --line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+    user-select: none;  /* 禁止用户鼠标在页面上选择文字、图片 */
+    background: var(--color-background);
+    color: var(--color-text);
+    width: 100VW;
+}
+
+a {
+    text-decoration: none;
+}
