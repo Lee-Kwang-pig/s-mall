@@ -39,7 +39,9 @@
       itemClick () {
         // this.isActive = !this.isActive
         // console.log(this.isActive)
-        this.$router.push(this.path)
+        if (this.$route.path != this.path){
+          this.$router.push(this.path)
+        }
       }
     }
   }
